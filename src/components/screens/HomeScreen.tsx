@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
+import { ROSE_CHAN_PORTRAIT } from '../../assets';
 
 export const HomeScreen: React.FC = () => {
   const {
@@ -61,7 +62,7 @@ export const HomeScreen: React.FC = () => {
             <div className="relative shrink-0">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#ffd9e1] to-[#ffb1c4] p-0.5 shadow-sm border-2 border-white flex items-center justify-center overflow-hidden">
                 <img
-                  src="/src/assets/images/rose_chan_portrait_1792376401667.jpg"
+                  src={ROSE_CHAN_PORTRAIT}
                   alt="Rose-chan Concierge"
                   className="w-full h-full object-cover object-top hover:scale-110 transition-transform"
                 />
@@ -355,7 +356,7 @@ export const HomeScreen: React.FC = () => {
             className="w-full py-2.5 px-4 rounded-full bg-gradient-to-r from-[#df2040] to-[#b7002d] text-white font-bold text-xs shadow-md hover:opacity-95 active:scale-98 transition-all flex items-center justify-center gap-2.5 group"
           >
             <img
-              src="/src/assets/images/rose_chan_portrait_1792376401667.jpg"
+              src={ROSE_CHAN_PORTRAIT}
               alt="Rose-chan"
               className="w-6 h-6 rounded-full object-cover border border-white group-hover:scale-110 transition-transform"
             />

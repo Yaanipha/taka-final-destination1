@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
 import { ScreenType } from '../../types';
+import { ROSE_CHAN_PORTRAIT } from '../../assets';
 
 export const Sidebar: React.FC = () => {
   const {
@@ -201,7 +202,7 @@ export const Sidebar: React.FC = () => {
               >
                 <div className="w-7 h-7 rounded-lg overflow-hidden mb-1 group-hover:scale-105 transition-transform border border-[#e5bdbc]">
                   <img
-                    src="/src/assets/images/rose_chan_portrait_1792376401667.jpg"
+                    src={ROSE_CHAN_PORTRAIT}
                     alt="Rose-chan"
                     className="w-full h-full object-cover object-top"
                   />

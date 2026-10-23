@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
+import { ROSE_CHAN_PORTRAIT } from '../../assets';
 
 export const RewardsScreen: React.FC = () => {
   const {
@@ -153,7 +154,7 @@ export const RewardsScreen: React.FC = () => {
               >
                 {st.id === 6 && st.isCollected ? (
                   <img
-                    src="/src/assets/images/rose_chan_portrait_1792376401667.jpg"
+                    src={ROSE_CHAN_PORTRAIT}
                     alt="Rose-chan Stamp"
                     className="w-8 h-8 rounded-full object-cover object-top border border-white"
                   />

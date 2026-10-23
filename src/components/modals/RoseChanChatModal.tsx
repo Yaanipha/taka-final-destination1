@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
+import { ROSE_CHAN_PORTRAIT } from '../../assets';
 
 interface ChatMessage {
   id: string;
@@ -109,7 +110,7 @@ export const RoseChanChatModal: React.FC = () => {
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-full bg-white/20 p-0.5 border border-white/40 flex items-center justify-center overflow-hidden shrink-0">
               <img
-                src="/src/assets/images/rose_chan_portrait_1792376401667.jpg"
+                src={ROSE_CHAN_PORTRAIT}
                 alt="Rose-chan"
                 className="w-full h-full object-cover object-top"
               />
@@ -148,7 +149,7 @@ export const RoseChanChatModal: React.FC = () => {
                 {isRose && (
                   <div className="w-8 h-8 rounded-full bg-[#ffe1e1] text-[#b7002d] flex items-center justify-center shrink-0 border border-[#e5bdbc] overflow-hidden">
                     <img
-                      src="/src/assets/images/rose_chan_portrait_1792376401667.jpg"
+                      src={ROSE_CHAN_PORTRAIT}
                       alt="Rose-chan"
                       className="w-full h-full object-cover object-top"
                     />
