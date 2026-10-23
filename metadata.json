@@ -1,0 +1,6 @@
+{
+  "name": "Takashimaya SG - Prestige & Rewards Dashboard",
+  "description": "Takashimaya Singapore department store luxury dashboard featuring Member & Pay QR, Sakura Spring Trail Passport, TakaLife Journal, Prestige VIP Concierge, and Rose-chan Omotenashi services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

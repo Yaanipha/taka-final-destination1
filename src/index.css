@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-headline: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: var(--font-headline);
+  }
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes cylinder-shake {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  20% { transform: rotate(-12deg) translateY(-4px); }
+  40% { transform: rotate(12deg) translateY(-8px); }
+  60% { transform: rotate(-8deg) translateY(-2px); }
+  80% { transform: rotate(8deg) translateY(-4px); }
+}
+
+.animate-cylinder-shake {
+  animation: cylinder-shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+
+.animate-scan {
+  animation: scan-line 2s ease-in-out infinite;
+}
+
+@keyframes sakura-float {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+  50% { transform: translateY(-6px) rotate(10deg); opacity: 1; }
+  100% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+}
+
+.animate-sakura {
+  animation: sakura-float 3s ease-in-out infinite;
+}
